@@ -1,125 +1,70 @@
 <!DOCTYPE html>
-
 <html>
-
   <head>
-
     <meta charset="utf-8">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>ဂါထာတော်များ</title>
-
 	
-
 	<link rel="stylesheet" href="css/md.css"/>
-
 	
-
   </head>
-
   
-
   <body>
-
     
-
     <div class="toolbar bg-white">
-
       <div class="app-name fill-horiz">ဂါထာတော်များ</div>
-
       
-
       <div class="app-menu">
-
         <div class="line-menu" onclick="onDrawer(this)">
-
           <div class="line1"></div>
-
           <div class="line2"></div>
-
           <div class="line3"></div>
-
         </div><!--line-menu-end-->
-
       </div><!--app-menu-end-->
-
       
-
     </div><!--toolbar-end-->
-
     
-
-    <div class="drawer-layout bg-white">
-
-      <div class="pd-top-100">
-
+    <div class="drawer-layout mg-top-50 bg-white">
+      <div class="pd-top-50">
       <div class="input-container">
-
         <input type="text" id="edt-text1" onkeyup="searchProducts()" placeholder="ရှာရန်..." class="input-text">
-
         <div class="input-text-clear">X</div>
-
       </div>
-
       
-
       <div class="pd-top-50 pd-bottom-50">
-
       <div class="item-container" id="search-item"></div>
-
       </div>
-
       
-
     </div>
-
     </div>
-
     
-
     <div class="pd-top-100 pd-bottom-50">
-
       <div class="item-container" id="item-container"></div>
-
     </div>
-
     
-
     <div class="show-data">
-
       
-
       <div class="item-card mg-10">
-
         <div class="top-layout">
-
-        <div class="sd-title title fill-horiz pd-10"></div>
-
+        <div class="sd-title title fill-horiz pd-10 app-menu"></div>
         <div class="sd-close pd-10">X</div>
-
       </div>
-
       <div class="sd-description pd-10"></div>
-
       </div>
-
     </div>
-
     
-
+    <div class="fo-layout app-menu pd-10">
+      <div>Design: </div>
+      <div style="color: blue;">HeinHtetAung</div>
+    </div>
+    
     <script src="js/data.js"></script>
-
     <script src="js/md.js"></script>
-
     
-
     <script src="js/ft.js"></script>
-
     
-
   </body>
-
   
-
 </html>
