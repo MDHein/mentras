@@ -3,7 +3,7 @@ function searchProducts() {
     let input = document.getElementById('edt-text1').value 
     input=input.toLowerCase(); 
 
-    let x = document.getElementsByClassName('item-card'); 
+    let x = document.getElementsByClassName('dr-item'); 
 	
     for (i = 0; i < x.length; i++) {  
 

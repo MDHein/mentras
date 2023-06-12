@@ -40,7 +40,7 @@ function showProducts(products) {
 
     let descText = products[i].desc;
     if (descText.length > 100) {
-      descText = descText.substring(0, 100) + " <span style='color: blue;'>See more...</span>";
+      descText = descText.substring(0, 100) + " <span style='color: black; font-weight: bold;'>See more...</span>";
     }
 
     let desc = document.createElement("div");
@@ -83,7 +83,7 @@ function putInSearch(products) {
   for (let i = 0; i < products.length; i++) {
     //console.log("Initial: ", products);
     let item = document.createElement("div");
-    item.setAttribute("class", "item-card");
+    item.setAttribute("class", "dr-item");
     container.appendChild(item);
 
     if (products[i].image !== "") {
@@ -98,7 +98,8 @@ function putInSearch(products) {
     title.setAttribute("class", "title pd-10");
     title.textContent = products[i].name;
     item.appendChild(title);
-
+    
+    /*
     let descText = products[i].desc;
     if (descText.length > 100) {
       descText = descText.substring(0, 100) + " <span style='color: blue;'>See more...</span>";
@@ -108,7 +109,8 @@ function putInSearch(products) {
     desc.setAttribute("class", "desc pd-10");
     desc.innerHTML = descText;
     item.appendChild(desc);
-
+    */
+    
     let description = document.createElement("div");
     description.setAttribute("class", "description pd-10");
     description.textContent = products[i].desc;
