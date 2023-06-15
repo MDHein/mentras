@@ -27,56 +27,43 @@ html, body {
   align-items: center;
   justify-content: center;
 }
-.fill-horiz{
-  width: 100%;
+.bg-blue{
+  background-color: blue;
 }
-.fill-vert{
-  height: 100%;
-}
-.line-menu{
-  display: inline-block;
-  cursor: pointer;
-  margin: 10px;
-  vertical-align: middle;
-}
-.line1, .line2, .line3 {
-  width: 20px;
-  height: 2px;
+.bg-black{
   background-color: black;
-  margin: 3px 0;
-  transition: 0.4s;
 }
-/* Animate Line Menu */
-.change .line1 {
-  transform: translate(0, 6px) rotate(-45deg);
+.bg-white{
+  background-color: white;
 }
-.change .line2 {opacity: 0;}
-.change .line3 {
-  transform: translate(0, -6px) rotate(45deg);
+.bg-alpha{
+  background: rgba(0,0,0,0.25);
 }
-/* Animate Line Menu End */
-
-.layout-horiz{
-  display: flex;
-  vertical-align: middle;
+.bottom-sheet{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  height: 300px;
+  background-color: #fff;
+  transition: bottom 0.3s ease-in-out;
+  z-index: 9999;
+  overflow: auto;
 }
-.layout-vert{
-  vertical-align: middle;
+.desc{
+  transition: display 0.3s ease;
 }
 .dialog{
-
   background: white;
-
   height: 60%;
-
   width: 90%;
-
   border-radius: 15px;
-
   box-shadow: 2px 5px 10px 0px rgba(0,0,0, 0.25);
-
   transition: all 0.2s ease-in-out;
-
+}
+.description{
+  display: none;
+  transition: display 0.3s ease;
 }
 .drawer-layout{
   display: none;
@@ -96,74 +83,31 @@ html, body {
   background: rgba(0,0,0,0.25);
 }
 .enable-scroll{
-
   overflow: auto;
-
+}
+.fill-horiz{
+  width: 100%;
+}
+.fill-vert{
+  height: 100%;
 }
 .input-container{
   display: flex;
   margin: 10px;
 }
-
 .input-text{
   flex: 1;
   padding: 5px;
 }
-
 .input-text-clear{
   padding: 5px;
   cursor: pointer;
 }
-.bg-blue{
-  background-color: blue;
-}
-.bg-black{
-  background-color: black;
-}
-.bg-white{
-  background-color: white;
-}
-.shadow{
-  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.25);
-}
-.top-layout{
-  width: 100%;
-  display: flex;
-}
-.pd-10{
-  padding: 10px;
-}
-.pd-top-50{
-  padding-top: 50px;
-}
-.pd-top-100{
-  padding-top: 100px;
-}
-.pd-top-150{
-  padding-top: 150px;
-}
-.pd-bottom-50{
-  padding-bottom: 50px;
-}
-.pd-bottom-100{
-  padding-bottom: 100px;
-}
-.pd-bottom-150{
-  padding-bottom: 150px;
-}
-.mg-10{
-  margin: 10px;
-}
-.mg-top-50{
-  margin-top: 50px;
-}
-
 .image{
   border-radius: 15px;
   width: 100%;
   object-fit: cover;
 }
-
 .item-card{
   background-color: white;
   border-radius: 15px;
@@ -188,17 +132,6 @@ html, body {
 .item-card-black:active{
   border: 1px solid blue;
 }
-.title{
-  font-weight: bold;
-}
-.desc{
-  transition: display 0.3s ease;
-}
-.description{
-  display: none;
-  transition: display 0.3s ease;
-}
-
 .item-container{
   display: grid;
   grid-template-columns: auto auto auto;
@@ -222,8 +155,71 @@ html, body {
 				padding: 5px;
 			}
 		}
-
 	}
+.line-menu{
+  display: inline-block;
+  cursor: pointer;
+  margin: 10px;
+  vertical-align: middle;
+}
+.line1, .line2, .line3 {
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+/* Animate Line Menu */
+.change .line1 {
+  transform: translate(0, 6px) rotate(-45deg);
+}
+.change .line2 {opacity: 0;}
+.change .line3 {
+  transform: translate(0, -6px) rotate(45deg);
+}
+/* Animate Line Menu End */
+.layout-horiz{
+  display: flex;
+  vertical-align: middle;
+}
+.layout-vert{
+  vertical-align: middle;
+}
+.layout-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mg-10{
+  margin: 10px;
+}
+.mg-top-50{
+  margin-top: 50px;
+}
+.pd-10{
+  padding: 10px;
+}
+.pd-top-50{
+  padding-top: 50px;
+}
+.pd-top-100{
+  padding-top: 100px;
+}
+.pd-top-150{
+  padding-top: 150px;
+}
+.pd-bottom-50{
+  padding-bottom: 50px;
+}
+.pd-bottom-100{
+  padding-bottom: 100px;
+}
+.pd-bottom-150{
+  padding-bottom: 150px;
+}
+.shadow{
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.25);
+}
 .show-data{
   display: none;
   justify-content: center;
@@ -249,4 +245,14 @@ html, body {
 }
 .sd-close:hover{
   border: 1px solid blue;
+}
+.slide-in-left{
+  transition: left 0.3s ease-in-out;
+}
+.top-layout{
+  width: 100%;
+  display: flex;
+}
+.title{
+  font-weight: bold;
 }
