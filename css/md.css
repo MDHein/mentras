@@ -54,6 +54,7 @@ html, body {
   transition: display 0.3s ease;
 }
 .dialog{
+  overflow: auto;
   background: white;
   height: 60%;
   width: 90%;
