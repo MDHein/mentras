@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://gahtar.netlify.app/sitemap.xml
