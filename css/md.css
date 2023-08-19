@@ -54,7 +54,7 @@ html, body {
   transition: display 0.3s ease;
 }
 .dialog{
-  overflow: auto;
+  overflow: hidden;
   background: white;
   height: 60%;
   width: 90%;
@@ -232,7 +232,7 @@ html, body {
   background: rgba(0,0,0,0.25);
   top: 0;
   left: 0;
-  overflow: auto;
+  overflow: hidden;
 }
 .sd-close{
   width: 30px;
@@ -246,6 +246,10 @@ html, body {
 }
 .sd-close:hover{
   border: 1px solid blue;
+}
+.scroll-view{
+  overflow-y: auto;
+  height: 100%;
 }
 .slide-in-left{
   transition: left 0.3s ease-in-out;
