@@ -62,6 +62,7 @@ function showProducts(products) {
 }
 
 function showDetails(t, d) {
+  document.body.style.overflow = "hidden";
   let showData = document.querySelector(".show-data");
   let titleText = document.querySelector(".sd-title");
   let close = document.querySelector(".sd-close");
@@ -71,6 +72,7 @@ function showDetails(t, d) {
 
   close.addEventListener("click", () => {
     showData.style.display = "none";
+    document.body.style.overflow = "auto";
   });
 
   titleText.innerText = t;
