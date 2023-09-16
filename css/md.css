@@ -2,44 +2,45 @@ html, body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: #e8e8e8;
 }
-.toolbar{
+.toolbar {
   position: fixed;
   width: 100%;
   display: flex;
   box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.25);
 }
-.app-img{
+.app-img {
   width: 35px;
   height: 35px;
   border-radius: 35px;
   vertical-align: middle;
   margin: 10px;
 }
-.app-name{
+.app-name {
   font-size: 20px;
   font-weight: bold;
   margin: 10px;
   vertical-align: middle;
 }
-.app-menu{
+.app-menu {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.bg-blue{
+.bg-blue {
   background-color: blue;
 }
-.bg-black{
+.bg-black {
   background-color: black;
 }
-.bg-white{
+.bg-white {
   background-color: white;
 }
-.bg-alpha{
+.bg-alpha {
   background: rgba(0,0,0,0.25);
 }
-.bottom-sheet{
+.bottom-sheet {
   position: fixed;
   left: 0;
   right: 0;
@@ -50,10 +51,10 @@ html, body {
   z-index: 9999;
   overflow: auto;
 }
-.desc{
+.desc {
   transition: display 0.3s ease;
 }
-.dialog{
+.dialog {
   overflow: hidden;
   background: white;
   height: 60%;
@@ -62,11 +63,11 @@ html, body {
   box-shadow: 2px 5px 10px 0px rgba(0,0,0, 0.25);
   transition: all 0.2s ease-in-out;
 }
-.description{
+.description {
   display: none;
   transition: display 0.3s ease;
 }
-.drawer-layout{
+.drawer-layout {
   display: none;
   width: 100%;
   height: 100%;
@@ -74,90 +75,97 @@ html, body {
   position: fixed;
   overflow: auto;
 }
-.dr-item{
+.dr-item {
   margin-left: 10px;
   margin-right: 10px;
   border-bottom: 1px solid gray;
   transition: all 0.2s ease-in-out;
 }
-.dr-item:hover{
+.dr-item:hover {
   background: rgba(0,0,0,0.25);
 }
-.enable-scroll{
+.enable-scroll {
   overflow: auto;
 }
-.fill-horiz{
+.fill-horiz {
   width: 100%;
 }
-.fill-vert{
+.fill-vert {
   height: 100%;
 }
-.input-container{
+.input-container {
   display: flex;
   margin: 10px;
+  padding: 5px 15%;
 }
-.input-text{
+@media screen and (max-width: 500px) {
+  .input-container {
+    padding: 0;
+  }
+}
+.input-text {
   flex: 1;
   padding: 5px;
 }
-.input-text-clear{
+.input-text-clear {
   padding: 5px;
   cursor: pointer;
+  display: none;
 }
-.image{
+.image {
   border-radius: 15px;
   width: 100%;
   object-fit: cover;
 }
-.item-card{
+.item-card {
   background-color: white;
   border-radius: 15px;
   box-shadow: 2px 5px 10px 0px rgba(0,0,0, 0.25);
   transition: all 0.2s ease-in-out;
 }
-.item-card:hover{
+.item-card:hover {
   border: 1px solid blue;
 }
-.item-card:active{
+.item-card:active {
   border: 1px solid blue;
 }
-.item-card-black{
+.item-card-black {
   background-color: black;
   border-radius: 15px;
   box-shadow: 2px 5px 10px 0px rgba(0,0,0, 0.25);
   transition: all 0.2s ease-in-out;
 }
-.item-card-black:hover{
+.item-card-black:hover {
   border: 1px solid blue;
 }
-.item-card-black:active{
+.item-card-black:active {
   border: 1px solid blue;
 }
-.item-container{
+.item-container {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 10px;
   padding: 10px;
 }
 
-@media screen and (max-width: 800px){
-			.item-container{
-			display: grid;
-			grid-template-columns: auto auto;
-			gap: 8px;
-			padding: 8px;
-		}
-		
-		@media screen and (max-width: 500px){
-			.item-container{
-				display: grid;
-				grid-template-columns: auto;
-				gap: 5px;
-				padding: 5px;
-			}
-		}
-	}
-.line-menu{
+@media screen and (max-width: 800px) {
+  .item-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  @media screen and (max-width: 500px) {
+    .item-container {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 5px;
+      padding: 5px;
+    }
+  }
+}
+.line-menu {
   display: inline-block;
   cursor: pointer;
   margin: 10px;
@@ -174,54 +182,56 @@ html, body {
 .change .line1 {
   transform: translate(0, 6px) rotate(-45deg);
 }
-.change .line2 {opacity: 0;}
+.change .line2 {
+  opacity: 0;
+}
 .change .line3 {
   transform: translate(0, -6px) rotate(45deg);
 }
 /* Animate Line Menu End */
-.layout-horiz{
+.layout-horiz {
   display: flex;
   vertical-align: middle;
 }
-.layout-vert{
+.layout-vert {
   vertical-align: middle;
 }
-.layout-center{
+.layout-center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.mg-10{
+.mg-10 {
   margin: 10px;
 }
-.mg-top-50{
+.mg-top-50 {
   margin-top: 50px;
 }
-.pd-10{
+.pd-10 {
   padding: 10px;
 }
-.pd-top-50{
+.pd-top-50 {
   padding-top: 50px;
 }
-.pd-top-100{
+.pd-top-100 {
   padding-top: 100px;
 }
-.pd-top-150{
+.pd-top-150 {
   padding-top: 150px;
 }
-.pd-bottom-50{
+.pd-bottom-50 {
   padding-bottom: 50px;
 }
-.pd-bottom-100{
+.pd-bottom-100 {
   padding-bottom: 100px;
 }
-.pd-bottom-150{
+.pd-bottom-150 {
   padding-bottom: 150px;
 }
-.shadow{
+.shadow {
   box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.25);
 }
-.show-data{
+.show-data {
   display: none;
   justify-content: center;
   align-items: center;
@@ -234,7 +244,7 @@ html, body {
   left: 0;
   overflow: hidden;
 }
-.sd-close{
+.sd-close {
   width: 30px;
   height: 30px;
   border: 1px solid black;
@@ -244,20 +254,23 @@ html, body {
   align-items: center;
   margin: 10px;
 }
-.sd-close:hover{
+.sd-close:hover {
   border: 1px solid blue;
 }
-.scroll-view{
+.scroll-view {
   overflow-y: auto;
   height: 100%;
 }
-.slide-in-left{
+.sd-description {
+  padding: 0 10px 50px 10px;
+}
+.slide-in-left {
   transition: left 0.3s ease-in-out;
 }
-.top-layout{
+.top-layout {
   width: 100%;
   display: flex;
 }
-.title{
+.title {
   font-weight: bold;
 }
