@@ -17,7 +17,7 @@
   <body>
     
     <div class="toolbar bg-white">
-      <div class="app-name fill-horiz">ဂါထာတော်များ</div>
+      <h1 class="app-name fill-horiz">ဂါထာတော်များ</h1>
       
       <div class="app-menu">
         <div class="line-menu" onclick="onDrawer(this)">
@@ -32,7 +32,7 @@
     <div class="drawer-layout mg-top-50 bg-white">
       <div class="pd-top-50">
       <div class="input-container">
-        <input type="text" id="edt-text1" onkeyup="searchProducts()" placeholder="ရှာရန်..." class="input-text">
+        <input type="search" id="edt-text1" onkeyup="searchProducts()" placeholder="ရှာရန်..." class="input-text">
         <div class="input-text-clear">X</div>
       </div>
       
@@ -56,7 +56,7 @@
       </div>
       <hr>
       <div class="scroll-view">
-        <div class="sd-description pd-10"></div>
+        <div class="sd-description"></div>
       </div>
       
       </div>
@@ -64,7 +64,7 @@
     
     <div style="font-size: 10px;" class="fo-layout app-menu pd-10">
       <div>All right reserved.&copy;&nbsp;</div>
-      <div style="color: blue;">HeinHtetAungyi</div>
+      <a href="https://heinhtetaungyi.github.io/labs/" style="color: blue; text-decoration: none;">HeinHtetAungyi</a>
     </div>
     
     <script src="js/data.js"></script>
