@@ -32,11 +32,11 @@ function changeBackgroundColor(x) {
 
 inputTextclear.style.display="none";
 inputText.addEventListener("input", () => {
-  if (inputText.value.trim() !== "") {
+  /*if (inputText.value.trim() !== "") {
     inputTextclear.style.display="block";
   } else {
     inputTextclear.style.display="none";
-  }
+  }*/
 });
 
 inputTextclear.addEventListener("click", () => {
