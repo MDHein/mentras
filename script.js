@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", getGahtar);
 async function getGahtar() {
  try {
   const response = await
-  fetch("https://raw.githubusercontent.com/MDHein/mentras/main/data/one.json");
+  fetch("data/one.json");
   if (!response.ok) {
    throw new Error("Failed to fetch Gahtar");
   }
