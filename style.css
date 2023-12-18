@@ -1,0 +1,112 @@
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: Arial, Sans-Serif;
+}
+html,body,main {
+ width: 100%;
+ height: 100%;
+ background: rgb(35, 31, 32);
+}
+main {}
+main img {
+ width: 100%;
+ height: 45%;
+ object-fit: cover;
+}
+main h1 {
+ color: white;
+ text-align: center;
+ padding: 20px;
+}
+main .input-container {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+}
+main .input-container input {
+ width: 50%;
+ margin: 0 auto;
+ padding: 10px 20px;
+ border-radius: 15px;
+ border: none;
+ outline: none;
+}
+@media screen and (max-width: 500px) {
+ main .input-container input {
+  width: 80%;
+ }
+}
+ul {
+ padding: 10px 10%;
+}
+ul li {
+ list-style: none;
+ padding: 10px 20px;
+ margin: 10px 10px 0 10px;
+ color: white;
+ border-bottom: 1px solid white;
+}
+ul li:hover {
+ background: rgba(0,0,0,0.5);
+}
+@media screen and (max-width: 500px) {
+ ul {
+  padding: 10px 0;
+ }
+}
+#dialogLayout {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: rgba(0,0,0,0.5);
+ display: none;
+ align-items: center;
+ justify-content: center;
+ padding: 10% auto;
+}
+#dialogContent {
+ width: 50%;
+ height: 50%;
+ border-radius: 10px;
+ background: rgba(225, 225, 225, 0.2);
+ backdrop-filter: blur(10px);
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+#dialogClose {
+ align-self: flex-end;
+ margin: 10px;
+}
+#dialogContent .column {
+ flex: 1;
+ height: 100%;
+ width: 100%;
+ padding: 20px;
+ overflow-y: auto;
+ background: rgba(0, 0, 0, 0.5);
+ color: white;
+}
+@media screen and (max-width: 500px) {
+ #dialogContent {
+  width: 80%;
+ }
+}
+footer {
+ color: gray;
+ text-align: center;
+ padding: 20px;
+ font-size: 12px;
+}
+footer a {
+ color: white;
+ text-decoration: none;
+ font-size: 15px;
+ font-weight: bold;
+}
